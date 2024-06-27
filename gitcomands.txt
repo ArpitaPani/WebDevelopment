@@ -4,7 +4,7 @@ git show --> gives us all the commit and changes made
 
 git branch --> list all the branches present in the current repo
 git status --> show the status of all the files in the current directory
-git brach <branch_name> --> create a branch with the branch_name specified
+git branch <branch_name> --> create a branch with the branch_name specified
 git checkout <branch_name> --> change our branch
 git checkout -b <branch_name> --> creates a new branch and moves us to that new branch
 git push origin <branch_name> --> upload/update the commited files of ur local repo in ur online repo
