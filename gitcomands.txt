@@ -1,4 +1,6 @@
 # .gitignore file --> the files u don't want to share with anyone
+git show --> gives us all the commit and changes made
+
 
 git branch --> list all the branches present in the current repo
 git status --> show the status of all the files in the current directory
@@ -7,7 +9,14 @@ git checkout <branch_name> --> change our branch
 git checkout -b <branch_name> --> creates a new branch and moves us to that new branch
 
 
+
+
 git init --> initialize ur git repo/ local git repo
 git add <filename> --> add the specific file to the staging area
 git commit -m "Custom Message" --> commits/saves all the changes of those files which were staging area 
 git add . --> it adds all the untracked and modified file to the staging area
+
+git config --global user.name "<GitHub_username>" --> sets the author's username 
+git config --global user.email "<GitHub_email_address>" --> sets the author's email
+git cofig --list --> lists all the 
+
