@@ -7,7 +7,7 @@ git status --> show the status of all the files in the current directory
 git brach <branch_name> --> create a branch with the branch_name specified
 git checkout <branch_name> --> change our branch
 git checkout -b <branch_name> --> creates a new branch and moves us to that new branch
-
+git push origin <branch_name> --> upload/update the commited files of ur local repo in ur online repo
 
 
 
@@ -18,5 +18,5 @@ git add . --> it adds all the untracked and modified file to the staging area
 
 git config --global user.name "<GitHub_username>" --> sets the author's username 
 git config --global user.email "<GitHub_email_address>" --> sets the author's email
-git cofig --list --> lists all the 
+git cofig --list --> lists all the configuration of the repo/git
 
