@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .bg{
+            background-color: rgb(244, 241, 222);
+        }
+        .h1{
+            color:rgb(9, 57, 41);
+            margin: 50 px;
+        }
+        .h2{
+            color: rgb(202, 106, 164);
+            margin: 50px;
+        }
+        .div{
+            display: grid;
+            border: 1px solid rosybrown;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body style="text-align: center;" class="bg">
+    
+    <h1 class="h1">ENTER THE CREDENTIALS AND PREFERENCES </h1>
+    <div class="div">
+        <br>
+    <form action="/contact.php">
+        <label class="h2">NAME: </label>
+        <input type="text" placeholder="Enter your name">
+    </br>         </br>
+    <label class="h2">PASSWORD: </label>
+        <input type="password" required placeholder="Enter the password">
+        </br>
+    </br><label class="h2">AGE: </label>
+        <input type="number" placeholder="Enter your age">
+    </br>        </br>
+<label class="h2">Your College: </label>
+<select name="COLLEGE" id="clg">
+    <option value="NONE">NONE</option>
+     <option value="SIT">Silicon</option>
+     <option value="KIIT">KIIT</option>
+     <option value="ITER">ITER</option>
+</select>
+</br>
+</br>
+<label class="h2">Select your year:</label>
+</br>
+    <label for="101">
+    <input type="radio" value="1ST YEAR" name="year" id="101"> 1ST YEAR
+    </label>
+</br>
+    <label for="102">
+    <input type="radio" value="2ND YEAR" name="year" id="102"> 2ND YEAR
+    </label>
+</br>
+    <label for="103">
+    <input type="radio" value="3RD YEAR" name="year" id="103"> 3RD YEAR
+    </label>
+</br>
+    <label for="104">
+    <input type="radio" value="4th YEAR" name="year" id="104"> 4th YEAR
+    </label>
+    </br>
+</br>
+    <label class="h2">Enter your stream:</label>
+    <input type="text" placeholder="BTech/MCA/MBA/MTech">
+</br>
+</br>
+<label class="h2">What time do you prefer for us to contact you?</label>
+</br>
+
+<input type="checkbox" value="btech" name="stream" id="id1"> After 3:20PM 
+</br>
+<input type="checkbox" value="mtech" name="stream" id="id2"> After 5:10PM
+<br>
+    <input type="Submit" value="Submit" class="h2">
+    </form>
+</div>
+    <p class="h1">Thank you for  contacting us! </p>
+    <p class="h1">You may also contact us on:</br>
+        Email: contact-us123@email.com
+    </br>
+    Phone: 01234-98765
+</br>
+Message: 987654321 
+</br>
+LOCATION: ABC Colony, XYZ Street, RSBB-1024756</p>
+</body>
+</html>
