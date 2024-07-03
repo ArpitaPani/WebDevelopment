@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+
+
+
+
+</body>
+</html>
+<script>
+    //     console.log("x") --> print statement
+    // console.log(x) Cannot access 'x' before initialization
+    let x = 10
+    console.log("x") //x
+    console.log(x) //10
+    console.log(1) //1
+    console.log("a") //a
+    let z="12"
+    let y = typeof(x)
+    console.log(y) //number
+    console.log(typeof(x)) //number
+    console.log(typeof(z)) //string
+    console.log(z.length) //2 --> string length count
+    let s="wsedrftgyhujimkxcvb swe 234567 @%$%^#@ gbh"
+    console.log(s.length) //42 --> string length count
+    let b=[1,2,3,4];
+    b.push(5)
+    b.push("arpita")
+    console.log(b) //(6) [1, 2, 3, 4, 5, 'arpita']
+    b.shift()
+    console.log(b) //(5) [2, 3, 4, 5, 'arpita']
+    b.unshift(9)
+    console.log(b) //(6) [9, 2, 3, 4, 5, 'arpita']
+    b.pop()
+    console.log(b) //(4) [1, 2, 3, 4]
+
+
+    console.log(b.length)//4
+    b="hello"
+    console.log(b) //hello
+    b=1.5
+    console.log(b) //1.5
+    
+    let q=4,w=3
+    console.log(w+q) //7
+    console.log(w-q) //-1
+    console.log(w*q) //12
+    console.log(w/q) //0.75
+    console.log(w%q) //3
+    console.log(w**q) //81 --> w to the power q
+    console.log(w+q) //30
+    console.log(q**0.5) //2 --> square root
+
+    w="pani"
+    console.log(w+q) //pani4
+    console.log(q+w) //4pani
+
+    let h=false, i=false
+    console.log(h && i) //false --> AND OP.
+    console.log(h || i) //false --> or OP.
+    console.log(!i) //true --> NOT OP.
+    i=true
+    console.log(h && i) //false --> AND OP.
+    console.log(h || i) //true --> AND OP.
+
+    x=18
+    x=5+x
+    console.log(x) //23
+
+    i=true
+    i=!i
+    console.log(!i) //true
+
+    let t=true
+    if(t)
+    {
+        //condition works only when t is true
+    }
+
+    // == --> checks for value of variable 
+    // === --> checks for value as well as the datatype
+
+    let f=5
+    // if (f =="5")
+    // {
+    //     console.log("inside if") // inside if --> checked the value
+    // }
+
+    // if (f ==="5")
+    // {
+    //     console.log("inside if") // no output --> checked the value as well as data type
+    // }
+    // else{
+    //     console.log("inside else") // inside else --> checked the value and datatype in if block and moved to else block
+    // }
+    
+    if (f ==="5")
+    {
+        console.log("inside if") // no output --> checked the value as well as data type
+    }
+    else if (f == 5)
+    {
+        console.log("inside else if") // inside else --> checked the value and datatype in if block and moved to else block
+    }
+    else
+    {
+        console.log("inside else") // inside else --> checked the value and datatype in if block and moved to else block
+    }
+
+    // (f===5)? console.log("inside if") : console.log("inside else") //ternary operation of if-else
+       // --> inside if
+    // (f===6)? console.log("inside if") : console.log("inside else") //ternary operation of if-else
+        //--> inside else
+
+    (f===6)? console.log("inside if") : (x===5)? console.log("true") : console.log("false") //false 
+
+    // for (let l=0; l<10; l++)
+    // {
+    //     console.log(l)
+    // }
+
+    let arr=[1,2,3,4,5]
+    for (let l=0; l<=arr.length; l++)
+    {
+        console.log(l)
+    }
+
+
+
+
+</script>
