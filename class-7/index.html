@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-3</title>
+    <!-- <style>
+        #head{
+            color:rgb(20, 122, 88);
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <input class="inp" type="text" value="input">
+    <input class="inp" id="input" type="text">
+    <input class="inp" type="text" value="input">
+    <input class="inp" type="text" value="input">
+    <input class="inp" type="text" value="input">
+    <input class="inp" type="text" value="input">
+    <p id="head" class="h">heading</p>
+    
+    <button onclick="change()">click</button> -->
+
+    <!-- <h1 id="heading" class="head">heading</h1>
+    <h1 class="head">heading1</h1>
+    <h1 class="head">heading2</h1>
+    <h1 class="head">heading3</h1>
+    <h1 class="head">heading4</h1>
+    <input id="inp" type="text" value="input" placeholder="name">-->
+    <!-- <button onclick="push()">click</button>  -->
+
+
+
+
+
+</body>
+</html>
+<script>
+    //   function sum(a,b){
+    //     console.log("inside fun",a,b);
+    // }
+    // // let x = document.getElementsByClassName("inp")
+    // // console.log(x,"input tag");
+    // let x = document.getElementsByClassName("h")
+    // console.log(x);
+    // console.log(x[0].innerText);
+    // function change(){
+        
+    //     x[0].innerHTML = "<b>hello</b>"
+    // }
+
+    // let x= document.querySelectorAll(".head");
+    // console.log(x)
+    // function func()
+    // {
+    //     let x= document.querySelector("#inp");
+    //     let y= document.querySelectorAll(".head");
+    //     y[2].innerHTML = x.value
+    //     console.log(x.value)
+    // }
+
+    // let x=document.createElement("h1")
+    // x.innerText="heading"
+    // // x.style.color="purple"
+    // // x.style.backgroundColor="beige"
+    // x.style.border="1px solid purple"
+    // x.setAttribute("id","head")
+    // x.setAttribute("class","heading")
+
+    // let inp = document.createElement("input")
+    // let body =document.querySelector("body")
+    // body.append(x,inp)
+
+    let arr=[];
+    function push()
+    {       
+        arr.push(inp.value)
+        console.log(arr)
+        display()
+    }
+    
+    function display()
+    {
+        div.innerHTML=""
+        for(let i=0; i<arr.length; i++)
+            {
+                let head=document.createElement("h1")
+                head.innerText=arr[i]
+                div.append(head)
+            }
+    }
+
+    let body =document.querySelector("body");
+    let inp = document.createElement("input");
+    inp.setAttribute("id", "inp")
+    let div=document.createElement("div")
+    let btn = document.createElement("button")
+    btn.addEventListener("click", push)
+    body.append(inp,btn,div)
+    btn.innerText="click"
+
+
+</script>
