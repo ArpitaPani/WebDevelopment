@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick ="getFromLocal()">SHOW</button>
+    <a  href="index.html">SET PAGE</a> 
+</body>
+</html>
+
+<script>
+   
+    function getFromLocal()
+    {
+
+        let data = JSON.parse(localStorage.getItem("input")) || "Input key not present"
+        for (let i=0; i<data.length; i++)
+        {
+            console.log(data[i]);
+        }
+    }
+
+    // localStorage.removeItem("input");
+    // localStorage.clear();
+
+</script>

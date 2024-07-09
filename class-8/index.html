@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button onclick ="saveToLocal()">Save</button>
+    <a  href="index2.html">GET PAGE</a> 
+
+</body>
+</html>
+
+<script>
+    function saveToLocal()
+    {
+        let inp = document.querySelector("#inp");
+        localStorage.setItem("input",JSON.stringify(inp.value));
+    }
+
+</script>

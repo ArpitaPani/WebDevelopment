@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <button onclick="saveToLocal()">set</button>
+    <button onclick="getFromLocal()">get</button>
+
+</body>
+</html>
+<script>
+    let arr=[1,2,3,4,5]
+    function saveToLocal()
+        {
+            let x= JSON.stringify([[1,2,3,4,5],6,7,8])
+            localStorage.setItem("name","Arpita")
+            localStorage.setItem("Phone",JSON.stringify(1234))
+            localStorage.setItem("Address","apartibindha")
+            localStorage.setItem("Array",arr)
+            localStorage.setItem("Array1",x)
+
+        }
+    function getFromLocal()
+        {
+            localStorage.getItem("name")
+            let ph =localStorage.getItem("Phone")
+            localStorage.getItem("Address")            localStorage.getItem("Array1")
+            let newArr= JSON.parse(localStorage.getItem("Array1")
+            )
+            // console.log(typeof(ph),ph)
+            console.log(typeof(Array1),Array1)
+            // console.log(typeof(56),56)
+
+        }
+   
+</script>
+
+
+<!-- JSON.stringify
+Phone
+setItem
+localStorage -->  
+
