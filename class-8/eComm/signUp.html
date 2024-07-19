@@ -3,43 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUP</title>
+    <title>Document</title>
 </head>
 <body>
-    <input type="text" id="username">
-    <input type="password" id="pass">
-    <button>SignUP</button>
+    <a  href="addProd.html">add</a>
+    <a href="homePage.html">home</a>
+    <a href="login.html">login</a>
+    <a href="signUp.html">signUp</a>
+    <br>
+    <input type="text" id="userName">
+    <input type="password" name="" id="pass">
+    <button onclick="signUpFun()">SignUp</button>
 </body>
 </html>
 <script>
-    let signUpData = []
-    let flag=false
-    let username = document.querySelector("#username")
-    let password = document.querySelector("#pass")
+    let signUpData = JSON.parse(localStorage.getItem("signUpArr")) || []
+    console.log(signUpData);
+    // let x = localStorage.getItem("signUpArr");
+    // if(x === null){
+    //     signUpData = [];
+    // } else {
+    //     signUpData = JSON.parse(x)
+    // }
+        let flag = false;
+    let userName = document.querySelector("#userName")
+    let pass = document.querySelector("#pass")
 
-    function signUpFun()
-    {
-
-        let obj = 
-        {
-            username : username.value,
-            pass : pass.value
+    function signUpFun(){
+        let obj = {
+            userName: userName.value,
+            pass: pass.value
         }
-        for (let i=0; i<signUpData.length; i++)
-        {
-            if(signUpData[i].username === obj.username)
-            {
-                flag = true
-                alert("user already exists")
-            }else{
-                flag = false
+
+        // a 1234
+        //5 === "5"
+        // [{a,1234},{aa 1234},]
+        // false - true
+        for(let i=0; i<signUpData.length; i++){ 
+            if(signUpData[i].userName === obj.userName ){ 
+                flag = true;
+                alert("user already exist")
+            } else {
+                flag = false;
             }
         }
-        if (flag === false)
-        {
+        if(flag === false){
             signUpData.push(obj)
+            localStorage.setItem("signUpArr",JSON.stringify(signUpData))
         }
-        console.log(signUpData)
-    }
+        console.log(signUpData);
 
+    }
 </script>
+
+<!-- [
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    },
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    },
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    },
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    }
+] -->
